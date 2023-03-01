@@ -1,0 +1,68 @@
+@keyframes tear {
+    0% {
+        opacity: 0;
+        transform: translateY(-2px) scale(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(12px) scale(0.6, 1.2) translateZ(0);
+    }
+    20%,
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(24px) translateX(4px) rotateZ(-30deg) scale(0.7, 1.1) translateZ(0);
+    }
+}
+
+@keyframes toggle {
+    50% {
+        transform: translateY(var(--middle-y, 0))
+            scale(var(--middle-s-x, var(--middle-s, 1)), var(--middle-s-y, var(--middle-s, 1)))
+            rotate(var(--middle-r, 0deg));
+    }
+}
+
+@keyframes angry {
+    40% {
+        background: var(--active);
+    }
+    45% {
+        box-shadow: inset 3px -3px 4px var(--active-shadow), inset 0 8px 10px var(--active-shadow-angry);
+    }
+}
+@keyframes shake {
+    30% {
+        transform: perspective(240px) rotateX(var(--step-1-rx, 0deg)) rotateY(var(--step-1-ry, 0deg))
+            rotateZ(var(--step-1-rz, 0deg)) translateZ(10px);
+    }
+    60% {
+        transform: perspective(240px) rotateX(var(--step-2-rx, 0deg)) rotateY(var(--step-2-ry, 0deg))
+            rotateZ(var(--step-2-rz, 0deg)) translateZ(10px);
+    }
+    100% {
+        transform: perspective(240px) translateZ(4px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

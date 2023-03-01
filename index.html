@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container__content container__content--thx" id="content-thx">
+      <img src="./images/illustration-thank-you.svg" alt="">
+      <div class="container__box">
+        <p>You selected <span id="rate"></span> out of 5</p>
+      </div>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+    <div class="container__content"  id="content-rating">
+      <div class="container__circle">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <ul class="feedback">
+        <li class="angry" data-ans="1">
+          <div>
+            <svg class="eye left">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="eye right">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="mouth">
+              <use xlink:href="#mouth">
+            </svg>
+          </div>
+        </li>
+        <li class="sad" data-ans="2">
+          <div>
+            <svg class="eye left">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="eye right">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="mouth">
+              <use xlink:href="#mouth">
+            </svg>
+          </div>
+        </li>
+        <li class="ok" data-ans="3">
+          <div></div>
+        </li>
+        <li class="good" data-ans="4">
+          <div>
+            <svg class="eye left">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="eye right">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="mouth">
+              <use xlink:href="#mouth">
+            </svg>
+          </div>
+        </li>
+        <li class="happy" data-ans="5">
+          <div>
+            <svg class="eye left">
+              <use xlink:href="#eye">
+            </svg>
+            <svg class="eye right">
+              <use xlink:href="#eye">
+            </svg>
+          </div>
+        </li>
+      </ul>
+      <button class="btn" type="submit" disabled>SUBMIT</button>
+    </div>
+  </div>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+      <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+      <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+    </symbol>
+  </svg>
+  <script src="main.js"></script>
+</body>
+
+</html>
