@@ -10,8 +10,8 @@ This is a solution to the [interactive-rating-component-main](https://www.fronte
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Single price grid component (Tailwind CSS) | Frontend Mentor](https://www.frontendmentor.io/solutions/interactiveratingcomponentmainsass--i8uzCkKSS)
-- Live Site URL: [https://github.com/MelvinAguilar/single-price-grid-component](https://super-sunflower-c92661.netlify.app/)
+- Solution URL: [interactive-rating-component-main(SASS)](https://www.frontendmentor.io/solutions/interactiveratingcomponentmainsass--i8uzCkKSS)
+- Live Site URL: [https://super-sunflower-c92661.netlify.app/](https://super-sunflower-c92661.netlify.app/)
 
 ### Built with
 
